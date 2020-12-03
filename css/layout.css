@@ -1,0 +1,129 @@
+
+/*　Head部分に入れること
+/* <link rel="stylesheet" href="layout.css"> */
+
+/* 上下左右中央揃えでロゴを真ん中に配置 */
+/* 背景は全面に */
+
+.img_area {
+    position:  relative;        /* 子要素の起点を指定 */
+    background-color:  rgb(162, 194, 49);    /* 背景色指定 */
+    height: 800px;              /* 高さ指定 %だとうまくいかない */
+    background-image: url(../img/bg.png);
+}
+ 
+/* 上にのっかるものを指定 */
+.all-wrapper {
+    background-color:  rgb(255, 252, 252);    /* 背景色指定 */
+    color:  black;             /* 文字色指定 */
+    padding: 20px;              /* 余白指定 */
+    width:  70%;              /* 幅指定 */
+    font-size: 15px;            /* フォントサイズ指定 */
+    top:  0;                    /* 上からの位置指定 */
+    bottom:  0;                 /* 下からの位置指定 */
+    left:  0;                   /* 左からの位置指定 */
+    right:  0;                  /* 右からの位置指定 */
+    margin:  auto;              /* 位置調整と組み合わせて上下中央に */
+}
+
+
+li{
+    line-height: 50px;
+      list-style: none;
+}
+
+.q{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.input-wrapper{
+    display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.ichiran{
+    text-align: center;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.obake{
+    width:80px;
+        text-align: center;
+}
+
+.space1{
+    height:100px;
+    width:20px;
+}
+
+.hukkidashi{
+    position:relative;
+    width:140px;
+    height:20px;
+    background:#a8dfff;
+    padding:20px;
+    text-align:center;
+    color:#333333;
+    font-size:17px;
+    font-weight:bold;
+    border-radius:9px;
+    -webkit-border-radius:9px;
+    -moz-border-radius:9px;
+    text-shadow:10px 10px 10px #FFFFFF ;
+}
+
+.hukkidashi:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(230, 204, 200, 0);
+    border-top-width:12px;
+    border-bottom-width:12px;
+    border-left-width:22px;
+    border-right-width:22px;
+    margin-top: -12px;
+    border-right-color:#a8dfff;
+    right:100%;
+    top:50%;
+}
+
+.obake-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: nowrap;
+
+}
+
+.submit{
+    height:40px;
+    width:120px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.submit-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+
+
+a{
+        text-decoration: none; 
+}
